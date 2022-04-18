@@ -1,12 +1,18 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import '@fontsource/lato';
 import './css/style.css';
-import logo from './images/pixels-logong.png';
+import VideoFeed from './components/videoFeed';
 
 function App() {
   return (
-    <div>
-      <img width="100%" src={logo} alt="logo" />
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" exact element={<VideoFeed />} />
+        </Routes>
+      </Router>
+
+    </>
   );
 }
 

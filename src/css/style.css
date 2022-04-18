@@ -4,3 +4,55 @@ body {
   margin: 0;
   background-color: black;
 }
+
+@media screen and (min-width: 992px) {
+  .header {
+    height: 100px;
+    line-height: 100px;
+    max-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #37cae2;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    height: 60px;
+    margin-top: 20px;
+  }
+
+  .header__logo img {
+    height: 75px;
+  }
+
+  .header__nav {
+    width: 28%;
+  }
+
+  .header__nav-list {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header__nav-list li a {
+    color: #2dbddb;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 20px;
+  }
+}
