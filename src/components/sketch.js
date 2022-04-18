@@ -1,4 +1,4 @@
-import imageTest from './image.jpg';
+import imageTest from './gloria48.jpg';
 
 const skin = 'Ñ@#W$9876543210?!abc;:+=-,._ ';
 let imageLoaded;
