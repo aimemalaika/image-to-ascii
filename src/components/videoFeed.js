@@ -1,5 +1,7 @@
 import React, { PureComponent } from 'react';
+import Sketch from 'react-p5';
 import Header from './header';
+import { setup, draw } from './sketch';
 
 class videoFeed extends PureComponent {
   render() {
@@ -7,7 +9,8 @@ class videoFeed extends PureComponent {
       <>
         <Header />
         <div className="container">
-          <h1>Video Feed</h1>
+          <h1 className="text-white">Video Feed</h1>
+          <Sketch setup={setup} draw={draw} className="App" />
         </div>
       </>
     );
