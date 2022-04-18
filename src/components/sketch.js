@@ -12,7 +12,6 @@ export const draw = (p5) => {
   p5.background(0);
   p5.loadImage(imageTest, (img) => {
     imageLoaded = img;
-    // p5.image(imageLoaded, 0, 0, 400, 400);
     const w = p5.width / imageLoaded.width;
     const h = p5.height / imageLoaded.height;
     imageLoaded.loadPixels();
